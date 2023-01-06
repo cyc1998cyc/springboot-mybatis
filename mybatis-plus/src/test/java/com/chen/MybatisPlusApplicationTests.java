@@ -23,7 +23,7 @@ class MybatisPlusApplicationTests {
     @Test
     void contextLoads() {
         for (int i = 101; i < 300; i++) {
-//            userMapper.insert(new User(i, "xiaojiansheng", "1812244934",0));
+            userMapper.insert(new User(i, "xiaojiansheng", "1812244934",0,0));
         }
 
     }
