@@ -32,8 +32,7 @@ public class WrapperTest {
     @Test
     void test02(){
         QueryWrapper<User> wrapper = new QueryWrapper<>();
-        wrapper.select("max(id) as maxId");
-        wrapper.eq("name","陈宇超");
+        wrapper.select("max(id) as maxId").eq("name","陈宇超");
         User user = userMapper.selectOne(wrapper);
         System.out.println(user.getMaxId());
     }
